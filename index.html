@@ -1,0 +1,45 @@
+<html>
+    <head> 
+        <title>iTinerator</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.16.0/mapbox-gl.css' rel='stylesheet' />
+    </head>
+    <body>
+        <div class="controls" data-bind="click: togglePlay, css: { play: !play(), pause: play() }, text: play() ? '&#9616;&#9616;' : '&#9658;' "></div>
+        <div class="map" id="map-canvas">
+        </div>
+        <div class="info">
+            <div class="day" data-bind="text: title"></div>
+            <div data-bind="visible: hotel, css: {clickable: (hotel().lat && hotel().lng)}, click: function(){ if(!hotel().lat){return;} stopPlay(); goToLocation({lat: hotel().lat, lng: hotel().lng, zoom: 15}); }" class="hotel">
+                <span class="icon"></span>
+                <span data-bind="text: hotel() ? hotel().name : ''"></span>
+            </div>
+            <div class="food">
+                <div class="title">Dinning</div>
+                <div class="included" data-bind="text: included"></div>
+                <!-- ko foreach: food -->
+                    <div class="location clickable" data-bind="click: function(){ $parent.stopPlay(); $parent.goToLocation({lat: lat, lng: lng, zoom: 15}); }">
+                        <span class="icon"></span>
+                        <span data-bind="text: name"></span>
+                    </div>
+                <!-- /ko -->
+            </div>
+        </div>
+        <div class="itinerary">
+            <div class="logo"></div>
+            <div class="stops" data-bind="foreach: itinerary">
+                <div class="stop" data-bind="attr: { 'data-day': day, 'data-title': title, 'data-hotel': JSON.stringify($data.hotel), 'data-food': JSON.stringify($data.food), 'data-path': JSON.stringify(path) }">
+                    <h3 class="title" data-bind="text: title"></h3>
+                    <p class="description" data-bind="html: description"></p>
+                    <p class="included" data-bind="text: $parent.getIncluded($data.meals ? meals : [])"></p>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.3.0/knockout-min.js"></script>
+        <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.16.0/mapbox-gl.js'></script>
+        <script src="main.js"></script>
+
+    </body>
+</html>

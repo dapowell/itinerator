@@ -1,0 +1,356 @@
+{
+    "plane-24": {
+      "x": 0,
+      "y": 0,
+      "width": 24,
+      "height": 24,
+      "pixelRatio": 1,
+      "sdf": false
+    },
+    "train-24": {
+      "x": 24,
+      "y": 0,
+      "width": 24,
+      "height": 24,
+      "pixelRatio": 1,
+      "sdf": false
+    },
+    "bus-24": {
+      "x": 48,
+      "y": 0,
+      "width": 24,
+      "height": 24,
+      "pixelRatio": 1,
+      "sdf": false
+    },
+    "boat-24": {
+      "x": 72,
+      "y": 0,
+      "width": 24,
+      "height": 24,
+      "pixelRatio": 1,
+      "sdf": false
+    },
+    "car-24": {
+      "x": 96,
+      "y": 0,
+      "width": 24,
+      "height": 24,
+      "pixelRatio": 1,
+      "sdf": false
+    },
+    "paddle-24": {
+      "x": 120,
+      "y": 0,
+      "width": 24,
+      "height": 24,
+      "pixelRatio": 1,
+      "sdf": false
+    },
+    "bike-24": {
+      "x": 144,
+      "y": 0,
+      "width": 24,
+      "height": 24,
+      "pixelRatio": 1,
+      "sdf": false
+    },
+    "walk-24": {
+      "x": 168,
+      "y": 0,
+      "width": 24,
+      "height": 24,
+      "pixelRatio": 1,
+      "sdf": false
+    },
+    "marker-24": {
+      "x": 192,
+      "y": 0,
+      "width": 24,
+      "height": 24,
+      "pixelRatio": 1,
+      "sdf": false
+    },
+    "plane-left-24": {
+      "x": 0,
+      "y": 24,
+      "width": 24,
+      "height": 24,
+      "pixelRatio": 1,
+      "sdf": false
+    },
+    "train-left-24": {
+      "x": 24,
+      "y": 24,
+      "width": 24,
+      "height": 24,
+      "pixelRatio": 1,
+      "sdf": false
+    },
+    "bus-left-24": {
+      "x": 48,
+      "y": 24,
+      "width": 24,
+      "height": 24,
+      "pixelRatio": 1,
+      "sdf": false
+    },
+    "boat-left-24": {
+      "x": 72,
+      "y": 24,
+      "width": 24,
+      "height": 24,
+      "pixelRatio": 1,
+      "sdf": false
+    },
+    "car-left-24": {
+      "x": 96,
+      "y": 24,
+      "width": 24,
+      "height": 24,
+      "pixelRatio": 1,
+      "sdf": false
+    },
+    "paddle-left-24": {
+      "x": 120,
+      "y": 24,
+      "width": 24,
+      "height": 24,
+      "pixelRatio": 1,
+      "sdf": false
+    },
+    "bike-left-24": {
+      "x": 144,
+      "y": 24,
+      "width": 24,
+      "height": 24,
+      "pixelRatio": 1,
+      "sdf": false
+    },
+    "walk-left-24": {
+      "x": 168,
+      "y": 24,
+      "width": 24,
+      "height": 24,
+      "pixelRatio": 1,
+      "sdf": false
+    },
+    "hotel-24": {
+      "x": 192,
+      "y": 24,
+      "width": 24,
+      "height": 24,
+      "pixelRatio": 1,
+      "sdf": false
+    },
+
+    "plane-up-24": {
+      "x": 0,
+      "y": 48,
+      "width": 24,
+      "height": 24,
+      "pixelRatio": 1,
+      "sdf": false
+    },
+    "train-up-24": {
+      "x": 24,
+      "y": 48,
+      "width": 24,
+      "height": 24,
+      "pixelRatio": 1,
+      "sdf": false
+    },
+    "bus-up-24": {
+      "x": 48,
+      "y": 48,
+      "width": 24,
+      "height": 24,
+      "pixelRatio": 1,
+      "sdf": false
+    },
+    "boat-up-24": {
+      "x": 72,
+      "y": 48,
+      "width": 24,
+      "height": 24,
+      "pixelRatio": 1,
+      "sdf": false
+    },
+    "car-up-24": {
+      "x": 96,
+      "y": 48,
+      "width": 24,
+      "height": 24,
+      "pixelRatio": 1,
+      "sdf": false
+    },
+    "paddle-up-24": {
+      "x": 120,
+      "y": 48,
+      "width": 24,
+      "height": 24,
+      "pixelRatio": 1,
+      "sdf": false
+    },
+    "bike-up-24": {
+      "x": 144,
+      "y": 48,
+      "width": 24,
+      "height": 24,
+      "pixelRatio": 1,
+      "sdf": false
+    },
+    "walk-up-24": {
+      "x": 168,
+      "y": 48,
+      "width": 24,
+      "height": 24,
+      "pixelRatio": 1,
+      "sdf": false
+    },
+    "attraction-24": {
+      "x": 192,
+      "y": 48,
+      "width": 24,
+      "height": 24,
+      "pixelRatio": 1,
+      "sdf": false
+    },
+
+    "plane-down-24": {
+      "x": 0,
+      "y": 72,
+      "width": 24,
+      "height": 24,
+      "pixelRatio": 1,
+      "sdf": false
+    },
+    "train-down-24": {
+      "x": 24,
+      "y": 72,
+      "width": 24,
+      "height": 24,
+      "pixelRatio": 1,
+      "sdf": false
+    },
+    "bus-down-24": {
+      "x": 48,
+      "y": 72,
+      "width": 24,
+      "height": 24,
+      "pixelRatio": 1,
+      "sdf": false
+    },
+    "boat-down-24": {
+      "x": 72,
+      "y": 72,
+      "width": 24,
+      "height": 24,
+      "pixelRatio": 1,
+      "sdf": false
+    },
+    "car-down-24": {
+      "x": 96,
+      "y": 72,
+      "width": 24,
+      "height": 24,
+      "pixelRatio": 1,
+      "sdf": false
+    },
+    "paddle-down-24": {
+      "x": 120,
+      "y": 72,
+      "width": 24,
+      "height": 24,
+      "pixelRatio": 1,
+      "sdf": false
+    },
+    "bike-down-24": {
+      "x": 144,
+      "y": 72,
+      "width": 24,
+      "height": 24,
+      "pixelRatio": 1,
+      "sdf": false
+    },
+    "walk-down-24": {
+      "x": 168,
+      "y": 72,
+      "width": 24,
+      "height": 24,
+      "pixelRatio": 1,
+      "sdf": false
+    },
+    "food-24": {
+      "x": 192,
+      "y": 72,
+      "width": 24,
+      "height": 24,
+      "pixelRatio": 1,
+      "sdf": false
+    },
+    "plane-line-24": {
+      "x": 0,
+      "y": 96,
+      "width": 16,
+      "height": 4,
+      "pixelRatio": 1,
+      "sdf": false
+    },
+    "train-line-24": {
+      "x": 24,
+      "y": 96,
+      "width": 16,
+      "height": 4,
+      "pixelRatio": 1,
+      "sdf": false
+    },
+    "bus-line-24": {
+      "x": 48,
+      "y": 96,
+      "width": 16,
+      "height": 4,
+      "pixelRatio": 1,
+      "sdf": false
+    },
+    "boat-line-24": {
+      "x": 72,
+      "y": 96,
+      "width": 16,
+      "height": 4,
+      "pixelRatio": 1,
+      "sdf": false
+    },
+    "car-line-24": {
+      "x": 96,
+      "y": 96,
+      "width": 16,
+      "height": 4,
+      "pixelRatio": 1,
+      "sdf": false
+    },
+    "paddle-line-24": {
+      "x": 120,
+      "y": 96,
+      "width": 16,
+      "height": 4,
+      "pixelRatio": 1,
+      "sdf": false
+    },
+    "bike-line-24": {
+      "x": 144,
+      "y": 96,
+      "width": 16,
+      "height": 4,
+      "pixelRatio": 1,
+      "sdf": false
+    },
+    "walk-line-24": {
+      "x": 168,
+      "y": 96,
+      "width": 16,
+      "height": 4,
+      "pixelRatio": 1,
+      "sdf": false
+    }
+}

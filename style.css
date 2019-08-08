@@ -1,0 +1,207 @@
+@font-face {
+    font-family: 'geometry';
+    src: url('fonts/Geometry_Soft_Pro-Bold_N-webfont.eot');
+    src: url('fonts/Geometry_Soft_Pro-Bold_N-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Geometry_Soft_Pro-Bold_N-webfont.woff') format('woff'),
+         url('fonts/Geometry_Soft_Pro-Bold_N-webfont.ttf') format('truetype'),
+         url('fonts/Geometry_Soft_Pro-Bold_N-webfont.svg#geometry_soft_probold_n') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+body {
+    padding: 0;
+    margin: 0;
+}
+.map {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.info {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: #FFF;
+    z-index: 2;
+    font-family: geometry;
+    text-shadow:
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px 1px 0 #000,
+         1px 1px 0 #000;
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 1s;
+}
+
+.info.show {
+    max-height: 1000px;
+}
+
+.info .hotel, .info .day, .info .food .title, .info .food .location {
+    display: block;
+    height: 32px;
+    line-height: 32px;
+    margin-bottom: 10px;
+}
+.info .hotel.clickable:hover, .info .food .location.clickable:hover {
+    cursor: pointer;
+    color: #FBAF28;
+}
+.info .hotel .icon, .info .food .location .icon {
+    height: 32px;
+    width: 32px;
+    border: 3px solid #FFF;
+    border-radius: 32px;
+    display: block;
+    float: left;
+    margin-right: 10px;
+    text-align: center;
+}
+.info .hotel.clickable:hover .icon, .info .food .location.clickable:hover .icon {
+    border-color: #FBAF28;
+}
+.info .hotel .icon:after, .info .food .location .icon:after {
+    display: block;
+    content: '';
+    height: 24px;
+    width: 24px;
+    background: url('icons.png');
+    background-position: -192px -24px;
+    margin-top: 3px;
+    margin-left: 4px;
+}
+.info .food .location .icon:after {
+    background-position: -192px -72px;
+}
+.info .food {
+    margin-bottom: 20px;
+}
+.info .food .included {
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+.info .food .included:first-letter{
+  text-transform: capitalize;
+}
+.info .food .title {
+    margin-top: 20px;
+}
+.controls {
+    color: #333;
+    opacity: 0.9;
+    text-shadow: 0 0 4px #000;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: 3;
+    font-size: 30px;
+}
+.controls.pause {
+    font-size: 20px;
+    margin-left: -6px;
+    margin-top: 4px;
+}
+.controls:hover {
+    cursor: pointer;
+    opacity: 1.0;
+}
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    background: center center no-repeat url('travelco.png');
+    background-size: 100%;
+    width: 340px;
+    height: 80px;
+}
+.itinerary {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 340px;
+    padding: 10px 10px 10px 50px;
+    background: rgba(255,255,255, 0.7);
+    border-right: 2px solid rgba(0,0,0,0.8);
+    z-index: 2;
+    transform:  matrix(1, 0, -0.05, 1, 0, 0);
+    transform-origin: 0 0;
+}
+
+.itinerary .stops {
+    margin-top: 90px;
+    overflow: auto;
+    height: 100%;
+    width: 340px;
+}
+
+.itinerary .stop {
+    padding: 2px 5px;
+    margin-bottom: 20px;
+    font-family: arial;
+    color: #333;
+    overflow: hidden;
+    min-height: 300px;
+}
+
+.itinerary .stop.highlight h3 {
+    color: #FBAF28;
+    text-shadow:
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px 1px 0 #000,
+         1px 1px 0 #000;
+}
+
+.itinerary .stop img {
+    width: 100%;
+}
+
+.itinerary .stop .title {
+    font-family: geometry;
+}
+
+.itinerary .stop .included:first-letter{
+  text-transform: capitalize;
+}
+
+.itinerary .stop:last-child {
+    margin-bottom: 600px;
+}
+
+.mapboxgl-control-container {
+    display: none;
+}
+
+.g .logo {
+    background: center center no-repeat url('img/gadventures.png');
+    background-size: 100%;
+}
+.g .itinerary .stop.highlight h3 {
+    color: #47268d;
+    text-shadow:
+        -1px -1px 0 #FFF,  
+         1px -1px 0 #FFF,
+        -1px 1px 0 #FFF,
+         1px 1px 0 #FFF;
+}
+
+.a .logo {
+    background: center center no-repeat url('img/andean.png');
+    background-size: 100%;
+}
+.a .itinerary .stop.highlight h3 {
+    color: #FBAF28;
+}
